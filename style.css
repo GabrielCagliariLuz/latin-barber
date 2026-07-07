@@ -93,11 +93,11 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%;
-    background-color: oklch(0.14 0.008 60 / 75%);
+    padding: 30px 8%;
+    background-color: transparent;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-b: 1px solid var(--border);
+    border-b: none;
     z-index: 1000;
 }
 
@@ -151,8 +151,8 @@ h1, h2, h3, h4 {
     display: flex;
     align-items: center;
     padding: 0 8%;
-    background: var(--gradient-dark), 
-                url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&q=80&w=1600') no-repeat center center/cover;
+    background: linear-gradient(to right, oklch(0.14 0.008 60 / 0.85) 30%, oklch(0.14 0.008 60 / 0.2) 60%, oklch(0.14 0.008 60 / 0.85) 100%), 
+                url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&q=80&w=1600') no-repeat center center/cover;
 }
 
 .hero-content {
