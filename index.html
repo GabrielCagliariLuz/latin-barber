@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latin Barber Craft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="navbar">
+        <div class="logo">LATIN <span class="gold-text">BARBER</span></div>
+        <nav class="nav-links">
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#barbeiros">Barbeiros</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <button class="btn-agendar open-modal-btn">Agendar</button>
+    </header>
+
+    <!-- HERO (ABERTURA) -->
+    <section id="top" class="hero">
+        <div class="hero-content">
+            <span class="badge">Desde 2015</span>
+            <h1>Estilo que <span class="gold-text">corta</span>,<br>tradição que <span class="gold-text">marca</span>.</h1>
+            <p>Barbearia premium com alma latina. Cortes precisos, barbas esculpidas e uma experiência que vai muito além do espelho.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary open-modal-btn">Agendar Horário</button>
+                <a href="#servicos" class="btn-secondary">Ver Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS DO LOVABLE -->
+    <section id="servicos" class="services">
+        <h2>Feito à mão, com <span class="gold-text">alma</span>.</h2>
+        <div class="services-grid">
+            <article class="service-card">
+                <h3>Corte Clássico</h3>
+                <span class="price">R$ 60</span>
+                <p>Cortes precisos com finalização impecável.</p>
+                <button class="btn-select open-modal-btn">Selecionar</button>
+            </article>
+            <article class="service-card">
+                <h3>Barba Navalhada</h3>
+                <span class="price">R$ 45</span>
+                <p>Modelagem completa com toalha quente e óleos.</p>
+                <button class="btn-select open-modal-btn">Selecionar</button>
+            </article>
+            <article class="service-card">
+                <h3>Combo Premium</h3>
+                <span class="price">R$ 120</span>
+                <p>Corte, barba, hidratação e ritual de toalha quente.</p>
+                <button class="btn-select open-modal-btn">Selecionar</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- JANELA DO AGENDAMENTO (MODAL) -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Agende seu Horário</h2>
+            <p>Escolha o profissional e horário...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
