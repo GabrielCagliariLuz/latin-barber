@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latin Barber Craft</title>
-    <!-- Coloque isso dentro da tag <head> antes do style.css -->
+    <!-- Fontes oficiais do Lovable -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
@@ -12,9 +12,9 @@
 </head>
 <body>
 
-    <!-- CABEÇALHO -->
+    <!-- CABEÇALHO (NAV) -->
     <header class="navbar">
-        <div class="logo">LATIN <span class="gold-text">BARBER</span></div>
+        <a href="#top" class="logo">LATIN <span class="gold-text">BARBER</span></a>
         <nav class="nav-links">
             <a href="#servicos">Serviços</a>
             <a href="#sobre">Sobre</a>
@@ -37,9 +37,13 @@
         </div>
     </section>
 
-    <!-- SERVIÇOS DO LOVABLE -->
+    <!-- SERVIÇOS -->
     <section id="servicos" class="services bg-grain">
-        <h2>Feito à mão, com <span class="gold-text">alma</span>.</h2>
+        <div class="section-header">
+            <span class="section-badge">Nossos Serviços</span>
+            <h2>Feito à mão, com <span class="gold-text">alma</span>.</h2>
+            <p>Cada serviço é executado com técnica, atenção aos detalhes e produtos de primeira linha.</p>
+        </div>
         <div class="services-grid">
             <article class="service-card">
                 <h3>Corte Clássico</h3>
@@ -62,15 +66,118 @@
         </div>
     </section>
 
-    <!-- JANELA DO AGENDAMENTO (MODAL) -->
-    <div id="booking-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Agende seu Horário</h2>
-            <p>Escolha o profissional e horário...</p>
+    <!-- SOBRE NÓS (IGUAL AO SEU PRINT) -->
+    <section id="sobre" class="about">
+        <div class="about-container">
+            <div class="about-image-wrapper">
+                <!-- Imagem profissional de barbearia escura para o seu local -->
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80&w=1000" alt="Interior da Latin Barber" class="about-img">
+                <div class="about-badge-floating">
+                    <span class="badge-number">15+</span>
+                    <span class="badge-text">PRÊMIOS<br>CONQUISTADOS</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-badge">Sobre Nós</span>
+                <h2>Uma barbearia com <span class="gold-text">sotaque</span>.</h2>
+                <div class="gold-divider"></div>
+                <p>A Latin Barber nasceu para trazer a energia latina ao cuidado masculino. Misturamos técnica europeia, tradição sul-americana e uma trilha sonora que faz você querer voltar.</p>
+                <p class="mt-4">Nosso espaço foi pensado como um refúgio: madeira escura, luz baixa, cadeiras de couro e um café espresso que acompanha cada corte.</p>
+                <ul class="about-features">
+                    <li><span class="dot"></span> Produtos premium</li>
+                    <li><span class="dot"></span> Toalha quente</li>
+                    <li><span class="dot"></span> Café cortesia</li>
+                    <li><span class="dot"></span> Wi-Fi rápido</li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- BARBEIROS -->
+    <section id="barbeiros" class="barbers bg-grain">
+        <div class="section-header">
+            <span class="section-badge">Time</span>
+            <h2>Mestres da <span class="gold-text">tesoura</span>.</h2>
+        </div>
+        <div class="barbers-grid">
+            <article class="barber-card">
+                <div class="barber-number">01</div>
+                <h3>Diego Alvarez</h3>
+                <p class="barber-role">Master Barber</p>
+                <p class="barber-exp">Experiência: 12 anos</p>
+            </article>
+            <article class="barber-card">
+                <div class="barber-number">02</div>
+                <h3>Rafael Cruz</h3>
+                <p class="barber-role">Barbeiro Sênior</p>
+                <p class="barber-exp">Experiência: 8 anos</p>
+            </article>
+            <article class="barber-card">
+                <div class="barber-number">03</div>
+                <h3>Mateo Silva</h3>
+                <p class="barber-role">Especialista em Barba</p>
+                <p class="barber-exp">Experiência: 6 anos</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="testimonials">
+        <div class="section-header">
+            <span class="section-badge">Depoimentos</span>
+            <h2>Quem passa, <span class="gold-text">volta</span>.</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"Melhor barbearia da cidade. Atendimento impecável e resultado sempre perfeito."</p>
+                <span class="author">— Lucas M.</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"Ambiente incrível, café bom e um corte que vale cada centavo."</p>
+                <span class="author">— André P.</span>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"Virei cliente fiel. O Diego entende exatamente o que você quer."</p>
+                <span class="author">— Rodrigo S.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA AGENDAMENTO -->
+    <section id="agendar" class="cta-section">
+        <div class="cta-card">
+            <div class="scissors-icon">✂</div>
+            <h2>Pronto pra sentar na <span class="gold-text">cadeira</span>?</h2>
+            <p>Garanta seu horário pelo WhatsApp. Atendimento com hora marcada, sem espera.</p>
+            <a href="https://wa.me/5551999999999" target="_blank" class="btn-primary">Agendar pelo WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- RODAPÉ (FOOTER) -->
+    <footer id="contato" class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">LATIN <span class="gold-text">BARBER</span></div>
+                <p>Barbearia premium com alma latina. Estilo, tradição e uma experiência que fica.</p>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <p>📍 Rua das Palmeiras, 123</p>
+                <p>📞 (51) 99999-9999</p>
+            </div>
+            <div>
+                <h4>Horário</h4>
+                <p>🕒 Ter–Sex: 10h – 21h</p>
+                <p>🕒 Sáb: 09h – 19h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Latin Barber. Todos os direitos reservados.
+        </div>
+    </footer>
+
 </body>
 </html>
